@@ -1,0 +1,14 @@
+package mypack;
+
+
+public class Traning {
+	
+	public static void main(String[] args) {
+		System.out.println("#1");
+		method1();
+		System.out.println("#5");
+	}
+
+	
+}
+

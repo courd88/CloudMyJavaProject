@@ -1,0 +1,65 @@
+package mypack;
+
+import java.util.Scanner;
+
+public class Traning {
+
+	public static void main(String[] args) {
+
+		final int STUDENTS_PER_CLASS = 3;	// 학급 당 학생 수
+		final int CLASSES_PER_GRADE = 3;	// 학년 당 학급 수
+		
+		Scanner scan = new Scanner(System.in);
+		
+		// 학년 전체 학생의 점수를 저장할 배열 
+		int[][] scores = new int[CLASSES_PER_GRADE][STUDENTS_PER_CLASS];
+
+		// 개별 학생의 점수를 입력 받음
+		for (int cls = 0; cls < CLASSES_PER_GRADE; cls ++) {
+			System.out.printf("*** %d반 ***\n", cls + 1);
+			for (int std = 0; std < STUDENTS_PER_CLASS; std ++) {
+				System.out.printf("%d번 학생의 점수를 입력하세요. ", std + 1);
+				scores[cls][std] = scan.nextInt();
+			}
+		}
+		
+		// 각 반의 총점을 계산
+		int[] totalScores = new int[CLASSES_PER_GRADE];
+		for (int cls = 0; cls < CLASSES_PER_GRADE; cls ++) {
+			for (int std = 0; std < STUDENTS_PER_CLASS; std ++) {
+				totalScores[cls] += scores[cls][std];
+			}
+		}
+		
+		// 각 반의 평균을 계산
+		double[] averages = new double[CLASSES_PER_GRADE];
+		for (int cls = 0; cls < CLASSES_PER_GRADE; cls ++) {
+			averages[cls] = totalScores[cls] / STUDENTS_PER_CLASS;
+		}
+		
+		// 학년 전체 총점을 계산
+		int totalScoreForGrade = 0;
+		for (int cls = 0; cls < CLASSES_PER_GRADE; cls ++) {
+			totalScoreForGrade += totalScores[cls];
+		}
+		
+		// 학년 전체 평균을 계산
+		double averageForGrade = totalScoreForGrade / CLASSES_PER_GRADE;
+		
+		
+		System.out.println("====================================");
+		
+		// 각 반의 총점과 평균을 출력
+		for (int cls = 0; cls < CLASSES_PER_GRADE; cls ++) {
+			System.out.printf("%d반 >>>\t총점 : %3d\t평균 : %5.2f\n", 
+cls + 1, totalScores[cls], averages[cls]);
+		}
+		
+		System.out.println("====================================");
+		
+		// 학년 전체 총점과 평균 출력
+		System.out.println("학년 총점 : " + totalScoreForGrade);
+		System.out.println("학년 평균 : " + averageForGrade);		
+	}
+}
+

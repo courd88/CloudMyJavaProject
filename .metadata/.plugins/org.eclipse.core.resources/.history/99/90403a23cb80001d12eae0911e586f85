@@ -1,0 +1,27 @@
+package myaddressbook;
+
+public class Person {
+
+	//필드
+private String name;
+private String phoneNo;
+
+// 게터세터 생성
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getPhone() {
+	return phoneNo;
+}
+public void setPhone(String phoneNo) {
+	this.phoneNo = phoneNo;
+}
+ public void print() {
+	 System.out.printf("%s\t%\n", name, phoneNo);
+ }
+	
+
+}

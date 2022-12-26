@@ -1,0 +1,17 @@
+package Test;
+
+
+public class SuperTest {
+
+	public static void main(String[] args) {
+			SuperTest st = new SuperTest();
+			
+			System.out.println(st.toString());
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package traning;
+
+public class Test {
+
+	public static void main(String[] args) throws InterruptedException {
+		String s1 = "안녕";
+		String s2 = "안녕";
+		System.out.println(s1 == s2);
+		
+	}
+
+}

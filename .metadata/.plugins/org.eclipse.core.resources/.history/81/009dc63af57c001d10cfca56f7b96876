@@ -1,0 +1,23 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		int a = 3;
+		int k1 = twice(3);
+		int k2 = twice(a);
+		
+		System.out.println(k1);
+		System.out.println(k2);
+		System.out.println(a);
+		
+	}
+	
+	private static int twice(int a) {
+		a = a * 2;
+		return a;
+	}
+}

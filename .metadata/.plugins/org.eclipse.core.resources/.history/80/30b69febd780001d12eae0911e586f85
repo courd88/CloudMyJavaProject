@@ -1,0 +1,151 @@
+package myaddressbook;
+
+import java.util.Scanner;
+
+public class AddressBook {
+
+	// 필드
+	private static Person[] persons = new Person[100];
+	// Person의 배열 /[이게 배열]/ 을 담을수 있는 persons를 만듬
+	private static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+// 실행클래스기 때문에 ~~~~ 메인메서드를 지녀야함 person,student,worker 사용해서 구현
+
+		boolean isRun = true; // isRun일때 맞는거다
+		while (isRun) { // isRun이 true일때 계속 반복
+			// 메뉴 출력
+			showMenu(); // 보여줘야 하는 메뉴 목록을 아래에 새로 추가
+
+			// int menu = scan.nextInt(); // 한번만 쓰는거니 아래 스위치로 통합
+			switch (scan.nextInt()) {
+			case 1:
+				regist();
+			case 2:
+				show();
+				break;
+			case 3:
+				modify();
+				break;
+			case 4:
+				delete();
+				break;
+			case 5:
+				isRun = false;
+				break;
+			}
+		}
+
+	}
+
+	private static void regist() {
+		System.out.println("----");
+		System.out.println("등록");
+		System.out.println("----");
+		
+		System.out.println("이름: ");
+		String name = scan.next();
+		
+		System.out.println("전화번호: ");
+		String phoneNo = scan.next();
+
+		System.out.println("학생여부: ");
+		String studentYn = scan.next();
+		studentYn = studentYn.trim().toUpperCase(); // 공백 없애야하니 트림
+		
+		Person person = new Person();
+		if (studentYn.equals("Y")) {
+			System.out.println("학번: ");
+			String studentNo = scan.next();
+			
+			Students student = new Students();
+			student.setName(name);
+			student.setPhoneNo(phoneNo);
+			student.setStudentNo(studentNo);
+			
+			person = student;
+			
+		} else {
+			System.out.print("사번: ");
+			String workerNo = scan.next();
+		}
+		
+		for (int i = 0; i < persons.length; i ++) {
+			if (persons[i] == null) {
+				persons[i] = person;
+				break;
+			}
+		}
+		
+		
+	}
+
+	private static void show() {
+		System.out.println("----");
+		System.out.println("조회");
+		System.out.println("----");
+		
+		for (int i = 0; i < persons.length; i ++) {
+			if (persons[i] != null) {
+				persons[i].print();
+			}
+		}
+
+	}
+
+	private static void modify() {
+		System.out.println("----");
+		System.out.println("수정");
+		System.out.println("----");
+		
+		System.out.println("이름: ");
+		String name = scan.next();
+		
+		System.out.println("전화번호: ");
+		String phoneNo = scan.next();
+		
+		//persons 배열에서 이름이 일치하는 person을 가져와 번호를 변경
+		for (int i = 0; i < persons.length; i ++) {
+			if (persons[i] != null && persons[i].getName().equals(name)) {
+				persons[i].setPhone(phoneNo);
+				System.out.println("결과 > 정상적으로 수정되었습니다.");
+				break;
+
+			}
+		}
+
+	}
+
+	private static void delete() {
+		System.out.println("----");
+		System.out.println("삭제");
+		System.out.println("----");
+		
+		System.out.println("이름: ");
+		String name = scan.next();
+		
+		System.out.println("전화번호: ");
+		String phoneNo = scan.next();
+		
+		//person 배열에서 일치하는 것을 삭제
+		for (int i = 0; i < persons.length; i ++) {
+			if (persons[i] != null && persons[i].getName().equals(name)) {
+				persons[i] = null;
+				System.out.println("결과 > 정살적으로 삭제되었습니다.");
+				break;
+			}
+		}
+
+	}
+
+	private static void isRun() {
+
+	}
+
+	private static void showMenu() {
+		System.out.println("----------------------------------");
+		System.out.println("1.등록|2.조회|3.수정|4.삭제|5.종료");
+		System.out.println("----------------------------------");
+		System.out.printf("선택 > ");
+	}
+}

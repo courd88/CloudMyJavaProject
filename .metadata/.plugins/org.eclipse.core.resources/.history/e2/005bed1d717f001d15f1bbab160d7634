@@ -1,0 +1,38 @@
+package Test;
+
+import mypack.Sample1;
+
+public class Printer {
+
+	public static void main(String[] args) {
+		
+		void println(int value) {
+			
+		}
+		void println(boolean value) {
+			
+		}
+		void println(double value) {
+			
+		}
+		void println(String value) {
+			
+		}
+		
+		Printer printer = new Printer();
+		
+		printer.println(10);
+		printer.println(true);
+		printer.println(5.7);
+		printer.println("홍길동");
+		
+		Sample1 Printer.printeln = new Sample1();
+		System.out.println(Printer.printeln.i);
+		System.out.println(Printer.printeln.d);
+		System.out.println(Printer.printeln.b);
+		System.out.println(Printer.printeln.s);
+
+
+	}
+
+}

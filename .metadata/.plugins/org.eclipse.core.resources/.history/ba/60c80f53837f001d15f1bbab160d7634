@@ -1,0 +1,20 @@
+package mypack;
+
+
+
+public class Traning {
+
+	public static void main(String[] args) {
+
+		// 1 부터 10 까지 정수의 합을 출력
+		int sum = 0;
+		
+		for (int no = 1; no <= 10; no ++) {
+			sum = sum + no;
+			System.out.printf(no + " : " + sum);
+		}
+		
+		System.out.println(sum);
+		
+	}
+}

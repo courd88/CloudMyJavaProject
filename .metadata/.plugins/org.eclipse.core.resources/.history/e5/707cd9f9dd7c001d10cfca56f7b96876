@@ -1,0 +1,14 @@
+package mypack;
+
+public class Car {
+	// 필드
+			String model;
+			boolean start;
+			int speed;
+			
+			//매소드
+			void speedUp() {
+				speed ++;
+			}
+
+}

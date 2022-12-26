@@ -1,0 +1,46 @@
+package polymorphism;
+
+class A {
+}
+
+class B extends A {
+}
+
+class C extends B {
+}
+
+class D extends B {
+}
+
+public class InheritanceSample {
+	public static void main(String[] args) {
+		{
+		// 업 캐스팅 (자동 타입 변환)
+		
+		B b1 = new B();
+		A a1 = b1;		// A a1 = (A)b1;
+		
+		C c1 = new C();
+		B b2 = c1;		// B b2 = (B)c1;
+		A a2 = c1;		// A a2 = (A)c1;
+		}
+		
+		{
+			// 다운 캐스팅(수동 타입 변환)
+			int i = 10;
+			byte b = (byte)i;  //손실감수 한다고 명시해야함 (byte)추가
+			
+			A a1 = new A();
+			B b1 = (B)a1;  		// 똑같이 (B)를 명시해야함
+			C c1 = (C)a1;
+			
+			A a2 = new B();
+			B b2 = (B)a2;
+			C c2 = (C)a2;
+			
+			
+		}
+
+	}
+
+}

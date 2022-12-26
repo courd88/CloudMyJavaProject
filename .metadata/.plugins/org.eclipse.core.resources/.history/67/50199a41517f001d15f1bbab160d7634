@@ -1,0 +1,20 @@
+package mypackage;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		//MyClass의 인스터스를 생성후 필드와 메서드 접근
+		MyClass mc = new MyClass();
+		
+		
+		
+		//mc.privateInt = 10;
+		mc.packageInt = 10;
+		mc.protectedInt = 10;
+		mc.publicInt = 10;
+		
+		
+	}
+
+}

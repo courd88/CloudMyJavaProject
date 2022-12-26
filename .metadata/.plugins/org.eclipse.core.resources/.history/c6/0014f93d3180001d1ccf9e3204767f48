@@ -1,0 +1,50 @@
+package polymorphism;
+
+class A {
+	void print() {
+		System.out.println("A 클래스");
+	}
+	
+	}
+
+class B extends A {
+	
+}
+
+class C {
+	void print()
+	{
+		System.out.println("C 클래스");
+	}
+	
+}
+class D extends C {
+	void print() {
+		System.out.println("D 클래스");
+	}
+	
+}
+
+
+public class InheritanceSample {
+	public static void main(String[] args) {
+		A a = new A();
+		a.print();
+		
+		B b = new B();
+		b.print();
+		
+		C c = new c();
+		c.print();
+		
+		D d = new D();
+		d.print();
+		
+		
+			
+			
+		}
+
+	}
+
+

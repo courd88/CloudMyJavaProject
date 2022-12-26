@@ -1,0 +1,14 @@
+package mypack;
+
+public class Quiz {
+
+	public static void main(String[] args) {
+		// Math.random() <== 0 ~ 1 사이의 임의의 수를 생성
+		// 0 보다 크고 100 보다 작은 임의의 수를 생성
+		int computerNumber = (int) (Math.random() * 100);
+
+		System.out.println("컴퓨터가 생성한 0 부터 100 사이의 숫자는 무엇이라고 생각합니까?");
+
+	}
+
+}

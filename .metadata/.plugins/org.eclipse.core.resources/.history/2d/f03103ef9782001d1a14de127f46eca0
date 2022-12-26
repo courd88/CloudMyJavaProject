@@ -1,0 +1,17 @@
+package test.system;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class LocalDateTimeExaple {
+
+	public static void main(String[] args) {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+		System.out.println("현재시간 : " + now.format(dtf));
+
+		LocalDateTime nowPlusOneYear = now.plusYears(1);
+		System.out.println("1년 후 : " + nowPlusOneYear.format(dtf));
+	}
+
+}

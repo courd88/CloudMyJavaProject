@@ -1,0 +1,23 @@
+package Test;
+
+class A {
+	A(int a) {
+		System.out.println("생성자");
+	}
+}
+
+class B extends A {
+	
+}
+
+public class SuperTest {
+
+	public static void main(String[] args) {
+		
+		System.out.println("");
+		
+		
+
+	}
+
+}

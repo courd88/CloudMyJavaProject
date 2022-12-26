@@ -1,0 +1,30 @@
+package mypack;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		final int LAST_LINE = 5;
+
+		for (int line = 1; line <= LAST_LINE; line++) {
+			for (int star = 1; star <= line; star++) {
+				System.out.print("*");
+			}
+			System.out.println();
+
+		}
+		System.out.printf("-----------");
+
+		for (int line = 1; line <= LAST_LINE; line++) {
+			for (int space = 1; space <= LAST_LINE - line; space ++) {
+				System.out.print("");
+			}
+			for (int star = 1; star <= line; star ++) {
+			}
+			System.out.println("*");
+		}
+		System.out.println("---------");
+	}
+}

@@ -1,0 +1,30 @@
+package mypack;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		int computerNumber = (int)(Math.random() * 100);
+		
+		Scanner scan = new Scanner(System.in);
+		
+		while(true) {
+			System.out.println("몇이라 생각해?");
+			int input = scan.nextInt();
+			
+			if (input > computerNumber) {
+				System.out.println("더 작아");
+				
+			} else if (input < computerNumber) {
+				System.out.println("더 커");
+			} 
+			System.out.printf("정답 %d/번 했어");
+			
+		}
+		
+	}
+	
+}

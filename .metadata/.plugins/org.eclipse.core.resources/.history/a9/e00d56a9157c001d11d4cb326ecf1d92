@@ -1,0 +1,18 @@
+package mypack;
+
+public class Hi {
+	
+	public static void main(String[]args) {
+		
+		String s1 = "안녕";
+		String s2 = "해";
+		System.out.println(s1 + s2);
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("안녕");
+		sb.append("햐");
+		System.out.println(sb.toString());
+		
+	}
+
+}

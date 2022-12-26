@@ -1,0 +1,28 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class Traning {
+
+	public static void main(String[] args) {
+
+		int a = 3;
+		int b = a;
+		System.out.printf("a = %d, b = %d\n", a, b);
+		
+		b = 7; 
+		System.out.printf("a = %d, b = %d\n", a, b);
+		
+		int[] c = { 3, 4, 5 };
+		int[] d = c;
+		System.out.printf("c = %s, d = %s\n", Arrays.toString(c), Arrays.toString(d));
+		
+		d[0] = 30;
+		d[1] = 40;
+		d[2] = 50;
+		System.out.printf("c = %s, d = %s\n", Arrays.toString(c), Arrays.toString(d));
+		
+			}
+					
+		}
+	

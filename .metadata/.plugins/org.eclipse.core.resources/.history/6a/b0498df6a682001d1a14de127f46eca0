@@ -1,0 +1,25 @@
+package traning;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		String inputData = scanner.nextLine();
+		System.out.println("입력값 = " + inputData);
+		
+		int firstNumber = Integer.parseInt(inputData);
+		System.out.println("첫번째 숫자 = " + firstNumber);
+		inputData = scanner.nextLine();
+		System.out.println("입력값2 = " + inputData);
+		
+		int secondNumber = Integer.parseInt(inputData);
+		System.out.println("두번째 숫자 = " + secondNumber);
+		
+		System.out.println("두 수의 합  = " + (firstNumber + secondNumber));
+
+	}
+
+}

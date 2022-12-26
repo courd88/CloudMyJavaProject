@@ -1,0 +1,14 @@
+package traning;
+
+public class SonwTireExample {
+
+	public static void main(String[] args) {
+		SnowTire snowtire = new SnowTire();
+		Tire tire = snowTire;
+		
+		
+		
+
+	}
+
+}

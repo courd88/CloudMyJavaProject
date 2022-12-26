@@ -1,0 +1,39 @@
+package Test;
+
+abstract class Animal {
+	abstract void cry(); // 메서드만 있어요 사용가능
+} // Animal animals = new Animal();은 불가능
+	// 추상클래스(abstract)여서 사용 불가능
+
+class Cat extends Animal {
+	void cry() {
+		System.out.println("니야앙");
+	}
+}
+
+class Dog extends Animal { // 풀어서 서술 안하고 메서드 가져와서 사용
+	void cry() { // 익명 이너 클래스
+		System.out.println("와왕");
+	}
+}
+
+public class AbstractTest {
+
+	public static void main(String[] args) {
+		Animal a1 = new Cat();		//부모가 내용이 없어도 메서드로 사용가능
+		a1.cry();
+
+		Animal a2 = new Dog();
+		a2.cry();
+		
+		Animal a3 = new Animal() {
+			void cry() {
+				System.out.println("한번만 사용후 종료");
+			}
+		
+		
+};
+
+}
+
+}

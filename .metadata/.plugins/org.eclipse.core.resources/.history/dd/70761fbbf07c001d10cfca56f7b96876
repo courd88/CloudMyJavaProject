@@ -1,0 +1,21 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int[] x =  { 1, 2, 3 };
+		printArray(x);
+
+	}
+
+	// int[] 배열 내용을 출력하는 매소드
+	// 출력 후 반환하는 내용이 없으니 viod로 지정
+	// static 메소드 main 내부에서 직접호출 하도록 static 지정
+	static void printArray(int[] a) {
+		System.out.println(Arrays.toString(a));
+		
+
+	}
+}

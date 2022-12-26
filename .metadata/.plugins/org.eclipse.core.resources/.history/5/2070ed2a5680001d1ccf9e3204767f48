@@ -1,0 +1,39 @@
+package mypack;
+
+
+public class Traning {
+	
+	
+		int i = 1;
+		
+		static int x = 10;
+		void methodA() {
+			System.out.println("methodA is called");
+			System.out.println("methodA is used field i = " + i);
+		}
+		void methodB() {
+			System.out.println("methodB is called");
+			methodA();
+		}
+		static void methodD() {
+			
+		}
+		
+		static void methodC() {
+			System.out.println("static methodC is called");
+			methodD();
+		}
+		
+		
+		public static void main(String[] args) {
+			
+			Traning t = new Traning();
+			t.methodB();
+			t.methodC();
+			Traning.methodC();
+		
+	}
+
+	
+}
+

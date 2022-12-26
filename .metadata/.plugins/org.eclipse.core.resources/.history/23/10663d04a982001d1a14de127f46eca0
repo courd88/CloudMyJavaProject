@@ -1,0 +1,14 @@
+package traning;
+
+public class Test {
+
+	public static void main(String[] args) throws InterruptedException {
+		byte i = 0;
+		while (true) {
+			System.out.println(i++);
+			Thread.sleep(100);
+		}
+		
+	}
+
+}

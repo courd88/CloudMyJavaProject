@@ -1,0 +1,20 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class qoduf {
+	
+	public static void main(String[] args) {
+		
+		int[] a1 = new int [] {1, 2, 3,};
+		System.out.println(Arrays.toString(a1));
+		
+		int[] a2;
+		a2 = new int[] {1, 2, 3,};
+		System.out.println(Arrays.toString(a2));
+		
+		int[] b1 = {1, 2, 3};
+		System.out.println(Arrays.toString(b1));
+	}
+
+}

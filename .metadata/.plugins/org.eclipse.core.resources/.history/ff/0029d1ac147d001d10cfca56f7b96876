@@ -1,0 +1,17 @@
+package mypack;
+
+public class PersocnExec {
+	
+	String name = "홍길동";
+	String regno = "- 주민번호: 921010-1821117";
+	String gender = "성별 : 남 ";
+	int birthYear ;
+	int birthMonth;
+	int birthDay;  
+	int isOlder;
+	
+
+	
+	System.out.printf(">>> %s(%s, %s, 나이 %d세)", name, regno, gender, " );
+
+}

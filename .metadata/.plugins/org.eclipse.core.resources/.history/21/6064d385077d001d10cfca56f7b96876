@@ -1,0 +1,23 @@
+package mypack;
+
+public class Test {
+	
+	int m;
+	int n;
+	
+	Test() {
+		m = 10;
+		n = 20;
+		System.out.println("첫번째 생성자");
+	}
+	Test(int a) {
+		m = a;
+		System.out.println("두번째 생성자");
+	}
+
+	public static void main(String[] args) {
+		Test t = new Test(100);
+		
+		
+	}
+}

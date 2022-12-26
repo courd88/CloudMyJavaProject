@@ -1,0 +1,29 @@
+package mypack;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class qodufdustmq {
+	public static void main(String[] args) {
+
+		final int STUDENTS_PER_CLASS = 3; 
+		final int CLASSES_PER_GRADE = 3;
+		
+		Scanner scan = new Scanner(System.in);
+
+		int[][] scores = new int[CLASSES_PER_GRADE] [STUDENTS_PER_CLASS]; 
+		
+		
+		for (int cls = 0; cls < CLASSES_PER_GRADE; cls ++) {
+			System.out.printf("*** %반 ***\n" cls + 1);
+		}
+		for (int std = 0; std < STUDENTS_PER_CLASS; std ++) {
+			System.out.printf("%d번 학생의 점수를 입력." std + 1);
+			score[cls][std] = scan.nextInt();
+		}
+			
+
+		int totalScore = 0;
+
+}
+}

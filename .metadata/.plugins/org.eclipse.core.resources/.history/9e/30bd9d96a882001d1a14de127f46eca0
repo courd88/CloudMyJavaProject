@@ -1,0 +1,16 @@
+package traning;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		byte i = 0;
+		while (true) {
+			System.out.println(i++);
+			Thread.sleep(100);
+		}
+		
+	}
+
+}

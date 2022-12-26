@@ -1,0 +1,9 @@
+package mypack;
+
+public class Car {
+	// 필드
+			String model;
+			boolean start;
+			int speed;
+
+}

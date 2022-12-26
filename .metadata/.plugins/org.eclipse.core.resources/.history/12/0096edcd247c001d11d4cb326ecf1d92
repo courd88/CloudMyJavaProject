@@ -1,0 +1,17 @@
+package mypack;
+
+import java.util.Scanner;
+
+public class HiTest {
+	
+	public static void main(String [] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("이름과 나이 주민번호를 적으세요");
+		
+		
+		
+		
+		
+	}
+
+}

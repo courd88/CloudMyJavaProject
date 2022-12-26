@@ -1,0 +1,56 @@
+package mypack;
+
+import java.util.Scanner;
+
+public class HiTest {
+	
+	public static void main(String [] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("이름과 주민번호를 적으세요");
+		
+		final int PERSON = 2;
+		
+//		String name = " 이름 ";
+//		String number = " 번호 ";
+		
+		String name = scan.next();
+		String number = scan.next();
+		
+		System.out.println("이름 : " + name);
+		System.out.println("주민번호 : " + number);
+		
+		char genderCode = number.charAt(7);
+		
+		String gender = "";
+		if (genderCode == '1'  || genderCode == '3') {
+			gender = "남";
+		} else if (genderCode == '2'  || genderCode == '4') {
+			gender = "여";
+		}
+		
+		switch (genderCode) {
+		case '1' :
+		case '3' :
+			gender = "남"; break;
+		case '2' :
+		case '4' :
+			gender = "여"; break;
+			
+			
+		}
+		
+//		int age = 0;
+		
+		System.out.printf(">>> %s(%s, 나이 %s세)", name, number, gender);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

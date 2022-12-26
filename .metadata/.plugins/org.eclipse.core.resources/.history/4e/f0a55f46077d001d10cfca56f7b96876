@@ -1,0 +1,22 @@
+package mypack;
+
+public class Test {
+	
+	int m;
+	int n;
+	
+	public void init( ) {
+		m = 10;			//this.m
+		n = 20;			//this.n
+	}
+	
+	public void init(int m, int n) {
+		this.m = m;
+		this.n = n;
+	}
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

@@ -1,0 +1,11 @@
+package test.system;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		int num = (int) (Math.random() * n) + start;
+		System.out.println("입니다");
+
+	}
+
+}

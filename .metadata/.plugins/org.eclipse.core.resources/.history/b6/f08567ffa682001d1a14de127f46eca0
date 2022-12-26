@@ -1,0 +1,33 @@
+package traning;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		z = 10;
+		
+		int a;
+		a = 3;
+		System.out.println(a);
+		
+		a = 5;
+		System.out.println(a);
+		
+		int b = 33;
+		System.out.println(b);
+		
+		b = 55;
+		System.out.println(b);
+		
+		final int x = 4;
+		
+		x = 5;
+		
+		final int y;
+		
+		y = 4;
+		y = 5;
+	}
+
+}

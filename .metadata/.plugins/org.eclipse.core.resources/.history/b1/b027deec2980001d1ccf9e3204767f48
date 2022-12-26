@@ -1,0 +1,36 @@
+package polymorphism;
+
+class A {
+	int m =3;
+	void abc() {
+		System.out.println("A");
+	}
+}
+
+class B extends A {
+	int n = 4;
+	void bcd() {
+		System.out.println("B");
+	}
+}
+
+
+public class InheritanceSample {
+	public static void main(String[] args) {
+		A a = new B();
+		System.out.println(a.m);
+		//System.out.println(a.n);
+		a.abc();
+		//a.bcd();
+		
+		B b = (B) a;
+		System.out.println(b.n);
+		b.bcs();
+		
+			
+			
+		}
+
+	}
+
+

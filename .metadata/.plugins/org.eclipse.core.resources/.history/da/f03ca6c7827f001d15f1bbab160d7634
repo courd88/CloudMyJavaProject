@@ -1,0 +1,28 @@
+package mypack;
+
+import java.util.Scanner;
+
+public class Traning {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);			// 사용자 입력을 받기 위한 인스턴스를 생성
+		
+		String inputData = scanner.nextLine();			// 라인 단위로 사용자가 입력한 내용을 
+		System.out.println("입력값1 = " + inputData);		 //  문자열로 저장
+		
+		int firstNumber = Integer.parseInt(inputData);		// 문자열을 정수로 변환 ⇒ 숫자가 아닌 값이 
+		System.out.println("첫번째 숫자 = " + firstNumber);	 //  포함된 경우에는 예외가 발생
+		
+		inputData = scanner.nextLine();
+		System.out.println("입력값2 = " + inputData);
+		
+		int secondNumber = Integer.parseInt(inputData);
+		System.out.println("두번째 숫자 = " + secondNumber);
+		
+		System.out.println("두 수의 합 = " + (firstNumber + secondNumber));	// 두 정수의 합을 출력
+		
+		
+	}
+	
+}

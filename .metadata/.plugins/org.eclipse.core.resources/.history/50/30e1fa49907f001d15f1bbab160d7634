@@ -1,0 +1,43 @@
+package mypack;
+
+
+
+public class Traning {
+
+	public static void main(String[] args) {
+		// 매개변수의 개수가 3개가 아닌 경우 => 메시지 출력 후 종료
+		if (args.length != 3) {
+			System.out.println("잘못된 입력입니다.");
+			System.out.println("예) Calc 숫자 plus|minus 숫자");
+			System.exit(0);
+		}
+		
+		// 매개변수의 개수가 3개인 경우 => 로직을 구현
+		String operator = args[1];						// 연산을 의미하는 명령어
+		int leftValue = Integer.parseInt(args[0]);		// 왼쪽 값
+		int rightValue = Integer.parseInt(args[2]);		// 오른쪽 값 
+		
+//		if (operator.equals("plus")) {
+//			System.out.printf("%d + %d = %d\n", leftValue, rightValue, leftValue + rightValue);
+//		} else if (operator.equals("minus")) {
+//			System.out.printf("%d - %d = %d\n", leftValue, rightValue, leftValue - rightValue);
+//		} else {
+//			System.out.println("잘못된 입력입니다.");
+//			System.out.println("예) Calc 숫자 plus|minus 숫자");
+//		}
+		
+		switch (operator) {
+		case "plus":
+			System.out.printf("%d + %d = %d\n", leftValue, rightValue, leftValue + rightValue);
+			break;
+		case "minus":
+			System.out.printf("%d - %d = %d\n", leftValue, rightValue, leftValue - rightValue);
+			break;
+		default:
+			System.out.println("잘못된 입력입니다.");
+			System.out.println("예) Calc 숫자 plus|minus 숫자");
+			break;
+		}
+	}
+}
+

@@ -1,0 +1,38 @@
+package mypack;
+
+import java.util.Scanner;
+
+public class Traning {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.printf("이름 : ");
+		String name = scan.nextLine().trim();
+		System.out.print("주민번호: ");
+		String regno = scan.nextLine().trim();
+		char genderCode = regno.charAt(7);
+		String gender = "";
+		switch (genderCode) {
+		case '1' :
+		case '3' :
+			gender = "남"; break;
+		case '2' :
+		case '4' :
+			gender = "여" break;
+		}
+		int year = Integer.parseInt(regno.substring(0, 2));
+		int age = 0;
+		switch (genderCode) {
+		case '1' :
+		case '2' :
+			age = 2022 - (1900 + year);
+			break;
+		case '3' :
+		case '4' :
+			age = 2022 - (2000 + year);
+			break;
+		}
+				
+	}
+}
+

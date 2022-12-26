@@ -1,0 +1,36 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// 배열 생성 후 배열 젼수로 인자 전달
+		int[] x = { 1, 2, 3 };
+		printArray(x);
+
+		// 배열상수를 				인자로 전달 하면 오류
+		// printArray 				내부에서 다음과 같은 형태로 처리
+		// int[] a; 				배열 상수를 초기화에 이용하는경우
+		// printArray({ 1, 2, 3);   선언과 초기화가 분리안됌
+		
+		//new 키워드 사용해서 배열 초기화
+		int[] y = new int[] { 1, 2, 3};
+		printArray(y);
+		
+		//new키워드를 이용해서 배열을 생성 초기화해서 인자로 전달
+		//printArray 내부에서 다음과 같은 형태로 처리
+		//int[] a;                   선언과 초기화가 분리 가능
+		// a = new int[] { 1, 2, 3};
+		printArray(new int[] { 1, 2, 3});
+
+	}
+
+	// int[] 배열 내용을 출력하는 매소드
+	// 출력 후 반환하는 내용이 없으니 viod로 지정
+	// static 메소드 main 내부에서 직접호출 하도록 static 지정
+	static void printArray(int[] a) {
+		System.out.println(Arrays.toString(a));
+
+	}
+}

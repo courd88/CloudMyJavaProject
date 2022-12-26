@@ -1,0 +1,12 @@
+package mypack;
+
+public class Sample {
+	
+		// 필드
+		String model;
+		boolean start;
+		int speed;
+		
+	}
+
+

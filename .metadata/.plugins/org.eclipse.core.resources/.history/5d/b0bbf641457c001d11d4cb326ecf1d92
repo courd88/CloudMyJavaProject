@@ -1,0 +1,32 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class Hangman {
+
+	public static void main(String[] args) {
+
+		final String STATEMENT = "Nurses in England, Wales and Northern Ireland are to go on strike from 08:00 on Thursday in the largest action of its kind in NHS history.\r\n"
+				+ "\r\n"
+				+ "Staff will continue to provide \"life-preserving\" and some urgent care but routine surgery and other planned treatment is likely to be disrupted.\r\n"
+				+ "\r\n"
+				+ "The Royal College of Nursing said staff had been given no choice after ministers refused to reopen pay talks.\r\n"
+				+ "\r\n" + "The UK government said the RCN's 19% pay rise demand was unaffordable.".replaceAll(",", "")
+						.replaceAll("\\.", "").replaceAll("&", "");
+		System.out.println(STATEMENT);
+
+		String[] words = STATEMENT.split(" ");
+		System.out.println(Arrays.toString(words));
+
+		int randNum = (int) (Math.random() * words.length);
+		String word = words[randNum];
+
+		for (int i = 0; i < word.length(); i++) {
+			System.out.print("_");
+		}
+		System.out.println();
+		System.out.println("시스템이 추출한 단어를 맞춰라");
+
+	}
+
+}

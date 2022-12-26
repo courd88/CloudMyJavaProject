@@ -1,0 +1,22 @@
+package traning;
+
+public class Test {
+	private int dan;
+	Test() {
+		this.dan = 2;
+	
+	}
+	
+	Test(int dan) {
+		this.dan = dan;
+
+	} 
+	void print() {
+		System.out.println("\n--------");
+		System.out.printf("%d단\n", this.dan);
+		System.out.println("-----------");
+		for (int i = 1; i < 10; i ++) {
+			System.out.printf("%d * %d = %2d \n", dan, i, dan * i);
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package traning;
+
+public class Traning {
+
+	public static void main(String[] args) {
+		System.out.print("화면");
+		System.out.print("출력");
+		System.out.print("3");
+		
+	}
+
+}

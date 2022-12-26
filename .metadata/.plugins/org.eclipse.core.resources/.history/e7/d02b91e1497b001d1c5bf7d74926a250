@@ -1,0 +1,14 @@
+package mypack;
+
+public class Text07 {
+	
+	public static void main(String[]) {
+		
+		final int LAST_LINE = 5;
+		
+		for (int y = 1; y <= LAST_LINE; y ++) {
+			for (int x = 1; x)
+		}
+	}
+
+}

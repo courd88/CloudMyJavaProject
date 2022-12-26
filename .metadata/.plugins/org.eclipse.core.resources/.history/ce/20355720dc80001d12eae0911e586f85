@@ -1,0 +1,29 @@
+package Test;
+
+class A {
+	
+	//A() {}			//부모클래스 A에서 빈생성자를 만들거나
+	
+//	A(int a) {
+//		System.out.println("생성자");
+//	}
+}
+
+class B extends A {
+	B() {
+//		super(0);		//자식클래스에서 새로운 생성자를 만들어야 오류 안뜸
+	}
+	
+}
+
+public class SuperTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+
+	}
+
+}

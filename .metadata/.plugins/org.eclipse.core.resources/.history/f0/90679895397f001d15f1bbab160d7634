@@ -1,0 +1,12 @@
+package mypack;
+
+public class GugudanExec {
+
+	public static void main(String[] args) {
+		// Gugudan 인스턴스 생성
+		Gugudan g = new Gugudan();
+		g.print();
+
+	}
+
+}

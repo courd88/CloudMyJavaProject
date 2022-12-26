@@ -1,0 +1,39 @@
+package mypack;
+
+import java.util.Scanner;
+
+public class Traning {
+
+	public static void main(String[] args) {
+
+		final int STUDENTS = 5;
+		Scanner scan = new Scanner(System.in);
+		
+		int[] scores = new int[STUDENTS];
+
+		// 개별 학생의 점수를 입력받음
+		for (int i = 0; i < STUDENTS; i ++) {
+			System.out.printf("%d번째 학생의 점수를 입력하세요.\n", i + 1);
+			scores[i] = scan.nextInt();
+		}
+		
+		// 반 전체의 총점을 계산
+		int totalScore = 0;
+		for (int i = 0; i < STUDENTS; i ++) {
+			totalScore += scores[i];  // totalScore = totalScore + scores[i];
+		}
+		
+		// 반 전체의 평균을 계산
+		double average = totalScore / STUDENTS;
+		
+		// 개별 학생의 점수, 반 전체의 총점, 평균을 출력
+		System.out.println("======================");
+		for (int i = 0; i < STUDENTS; i ++) {
+			System.out.printf("%d번째 학생의 점수 : %d\n", i + 1, scores[i]);
+		}
+		System.out.println("======================");
+		System.out.println("총점 : " + totalScore);
+		System.out.println("평균 : " + average);
+	}
+}
+

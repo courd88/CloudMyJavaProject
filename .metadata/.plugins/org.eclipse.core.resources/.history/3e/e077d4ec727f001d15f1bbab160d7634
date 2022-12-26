@@ -1,0 +1,28 @@
+package Test;
+
+public class Account {
+	
+	static final int MIN_BALANCE = 0;
+	static final int MAX_BALANCE = 1000000;
+	
+	private int balance;
+	
+	
+	
+	public int getBalnce() {
+		return this.balance;
+	}
+	public void setBalance(int blance) {
+		if (balance < 0 || balance > 1000000) {
+			
+		}
+		this.balance = balance;
+	}
+
+	
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package test.system;
+
+public class LocalDateTimeExaple {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

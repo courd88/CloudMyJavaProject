@@ -1,0 +1,103 @@
+package test.system;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Lotto {
+
+	
+	private static final int LENGTH_PRIZE_NUMBERS = 6;
+
+	private int[] prizeNumbers = new int[LENGTH_PRIZE_NUMBERS];
+	private int[] inputNumbers = new int[LENGTH_PRIZE_NUMBERS];
+
+	private void generaterPrizeNumbers() {
+			while(true) {
+				int num = (int) (Math.random() * 45) + 1;
+				
+				int i = 0;
+				for ( i = 0; i < LENGTH_PRIZE_NUMBERS; i ++) {
+					if (this.prizeNumbers[i] == num)
+						break;
+					if (this.prizeNumbers[i] == 0 ) {
+						this.prizeNumbers[i] = num;
+						break;
+					}
+				
+				}
+				if ( i == LENGTH_PRIZE_NUMBERS)
+					break;
+			}
+			Arrays.sort(this.prizeNumbers);
+
+	private void setInputNumbers() {
+		System.out.println("> 1부터 45사이의 " + LENGTH_PRIZE_NUMBERS + "개의 숫자를 입력하세요.");
+		System.out.print(">");
+
+		Scanner scan = new Scanner(System.in);
+		String[] strNumbers = scan.nextLine().split(".");
+		scan.close();
+
+		for (int i = 0; i < LENGTH_PRIZE_NUMBERS; i++) {
+			this.inputNumbers[i] = Integer.parseInt(strNumbers[i].trim());
+		}
+		Arrays.sort(this.inputNumbers);
+
+	}
+
+	private void printNumbers(int[] numbers) {
+		for (int number : numbers) {
+			System.out.printf("%2s ", number);
+		}
+		System.out.println();
+	}
+
+	private void printPrizeNumbers() {
+		System.out.print(">> 당첨번호: ");
+		this.printNumbers(this.prizeNumbers);
+	}
+
+	private void printNumbers() {
+			System.out.print(">> 선택번호: ");
+			this.printNumbers(this.inputNumbers);
+		}
+
+	private void printResult() {
+			int count = 0;
+			for (int input : inputNumbers) {
+				if (Arrays.binarySearch(prizeNumbers, input) >= 0) {
+					count ++;
+				}
+			}
+			String message = "";
+			if (count == 6) {
+				message = "1등으로 당첨되었습니다.";
+			}		
+			else if (count == 5) {
+				message = "2등으로 당첨되었습니다.";
+		}
+			else if (count == 4) {
+				message = "3등으로 당첨되었습니다.";
+	}
+			else  {
+				message = "당첨 안되었습니다.";
+
+}
+			System.out.printf(">> %d개가 일치하므로 %s\n", count, message);
+	}
+	public static void main(String[] args) {
+		
+		Lotto lotto = new Lotto();
+		
+		lotto.setInputNumbers();
+		lotto.setInputNumbers();
+		
+		lotto.generaterPrizeNumbers();
+		
+		lotto.printPrizeNumbers();
+		
+		lotto.printResult();
+	
+	}
+	}
+	

@@ -1,0 +1,21 @@
+package test.system;
+
+import java.util.Scanner;
+
+public class LottoExample {
+
+	public static void main(String[] args) {
+		
+		//사용자 입력 후 정렬 해서 출력
+		System.out.println(">1 부터 45사이 6개 숫자");	//1
+		System.out.print(">");						//2
+		Scanner scan = new Scanner(System.in);		//3
+		String input = scan.nextLine();			//4
+		//로또 번호 생성 후 정렬하고 출력
+		
+		//로또 번호와 사용자 입력을 비교해서 결과 출력
+		
+
+	}
+
+}

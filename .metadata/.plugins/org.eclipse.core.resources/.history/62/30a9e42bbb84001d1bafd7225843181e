@@ -1,0 +1,17 @@
+package traning;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("main() run . . . ");
+		
+		Sub sub = new Sub();
+		sub.dosomething();
+		
+		System.out.println("새로운 내뇽");
+		
+		System.out.println("더 새로워");
+
+	}
+
+}

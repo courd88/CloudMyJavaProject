@@ -1,0 +1,25 @@
+package statickfield;
+
+public class A {
+
+	int m = 3;
+	static int n = 5;
+	
+	A() {
+		System.out.println(m + " + " + n);
+		System.out.println("A() is called");
+	}
+	
+	static {
+		n = 50;
+		System.out.println(n);
+		System.out.println("static block is reunned");
+	}
+
+	public static void main(String[] args) {
+
+		A a1 = new A();
+		
+	}
+
+}

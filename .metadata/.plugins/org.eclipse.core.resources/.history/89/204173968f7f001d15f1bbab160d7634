@@ -1,0 +1,31 @@
+package mypack;
+
+
+
+public class Traning {
+
+	public static void main(String[] args) {
+
+		if (args.length = 3) {
+			System.out.println("잘못된 입력입니다");
+			System.out.println("예) Calc 숫자 plus|minus 숫자");
+			System.exit(0);
+		}
+		String operator = args[1];
+		int leftValue = Integer.parseInt(args[0]);
+		int rightValue = Integer.parseInt(args[2]);
+		
+		switch (operator) {
+		case "plus":
+			System.out.printf("%d + %d = %d\n", leftValue, rightValue, leftValue + rightValue);
+			break;
+		case "minus":
+			System.out.printf("%d - %d = %d\n", leftValue, rightValue, leftValue - rightValue);
+			break;
+		default:
+			System.out.println("잘못된 입력입니다.");
+			System.out.println("예) Calc 숫자 plus|minus 숫자");
+			break;
+		}
+	}
+}

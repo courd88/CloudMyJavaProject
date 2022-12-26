@@ -1,0 +1,35 @@
+package test.system;
+
+import java.util.Arrays;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		
+		private static final int LENGTH_PRIZE_NUMBERS = 6;
+		
+		private int[] prizwNumbers = new int[LENGTH_PRIZE_NUMBERS];
+		private int[] inputNumbers = new int[LENGTH_PRIZE_NUMBERS];
+		
+		private void generaterPrizeNumbers() {
+			while(true) {
+				int num = (int) (Math.random() * 45) + 1;
+				
+				int i = 0;
+				for ( i = 0; i < LENGTH_PRIZE_NUMBERS; i ++) {
+					if (this.prizeNumbers[i] == num)
+						break;
+					if (this.prizeNumbers[i] == 0 ) {
+						this.prizeNumbers[i] = num;
+						break;
+					}
+				}
+				if ( i == LENGTH_PRIZE_NUMBERS)
+					break;
+			}
+			Arrays.sort(this.prizeNumbers);
+		}
+
+	}
+
+}

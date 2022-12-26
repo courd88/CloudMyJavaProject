@@ -1,0 +1,17 @@
+package test.system;
+
+public class ValueComareExample {
+
+	public static void main(String[] args) {
+		
+		int i1 = 100;
+		int i2 = 100;
+		System.out.println(i1 == i2);
+		
+		Integer ii1 = 128;
+		Integer ii2 = 128;
+		System.out.println(ii1 == ii2);
+		
+	}
+
+}

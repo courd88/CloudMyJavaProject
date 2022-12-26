@@ -1,0 +1,16 @@
+package mypack;
+
+public class Hi {
+	
+	public static void main(String[]args) {
+		
+		String str = "안녕 태";
+		
+		System.out.println(str + " 길이 : " + str.length());
+		
+		System.out.println(str + " 3번째 글자 : " + str.charAt(1));
+		
+		
+	}
+
+}

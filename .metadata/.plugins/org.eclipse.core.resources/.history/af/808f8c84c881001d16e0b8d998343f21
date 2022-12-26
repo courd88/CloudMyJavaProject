@@ -1,0 +1,31 @@
+package traning;
+
+class Apple {
+}
+
+class Pencil {
+}
+
+class Goods<T> {
+	
+	private T goods;
+
+	public T getGoods() {
+		return goods;
+	}
+
+	public void setGoods(T goods) {
+		this.goods = goods;
+	}
+}
+
+public class Test {
+	public static void main(String[] args) {
+		Goods<Apple> goods1 = new Goods<Apple>();
+		goods1.setGoods(new Apple());
+		Apple apple = goods1.getGoods();
+		
+		
+	}
+
+}

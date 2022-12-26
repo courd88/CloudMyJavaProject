@@ -1,0 +1,15 @@
+package mypack;
+
+public class PersocnExec {
+	
+	String name;
+	String regno;
+	String gender;
+	int birthYear;
+	int birthMonth;
+	int birthDay; 
+	int isOlder;
+	
+
+
+}

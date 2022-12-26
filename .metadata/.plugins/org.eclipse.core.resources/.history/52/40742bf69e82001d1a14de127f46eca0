@@ -1,0 +1,24 @@
+package test.system;
+
+public class ListSample {
+
+	public static void main(String[] args) {
+		String[] array = new String[] {"가", "나", "다", "라" };
+		array[1] = null;
+		array[2] = null;
+		array[3] = null;
+		array[4] = null;
+		System.out.println(array.length);
+		
+		java.util.List<String> List = new ArrayList<>();
+		List.add("다");
+		List.add("나");
+		List.add("가");
+		List.add("라");
+		System.out.println(List.size());
+		
+		
+
+	}
+
+}

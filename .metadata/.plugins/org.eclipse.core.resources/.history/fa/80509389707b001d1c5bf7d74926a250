@@ -1,0 +1,24 @@
+package mypack;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class qodufdustmq {
+	public static void main(String[] args) {
+
+		final int STUDENT = 3; CLASS = 3;
+		Scanner scan = new Scanner(System.in);
+
+		int[] scores = new int[STUDENT];
+		
+		for (int i = 0; i < STUDENT; i ++) {
+			System.out.println("%d번째 학생의 점수를 입력.\n" i + 1);
+		}
+		for (int j = 0; j < CLASS; j ++) {
+			System.out.println("%d학년총점.\n" j + 1);
+		}
+			
+
+		int totalScore = 0;
+
+}

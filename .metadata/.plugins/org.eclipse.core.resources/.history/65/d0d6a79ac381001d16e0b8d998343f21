@@ -1,0 +1,23 @@
+package traning;
+
+class Apple {
+}
+
+class Pencil {
+}
+
+class Goods {
+	}
+	private Object goods = new Object();
+
+public Object getGoosd() {
+		return goods;
+	}
+
+	public void setGoosd(Object goods) {
+		this.goods = goods;
+	}
+
+public class Test {
+
+}

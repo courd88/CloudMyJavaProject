@@ -1,0 +1,42 @@
+package polymorphism;
+
+class A {
+}
+
+class B extends A {
+}
+
+class C extends B {
+}
+
+class D extends B {
+}
+
+public class InheritanceSample {
+	public static void main(String[] args) {
+
+		A a = new A();
+		B b = new B();
+		C c = new C();
+		D d = new D();
+		// 올바른 다형적 표현
+		// 부모 참조변수 = new 자식();
+
+		A ab = new B();
+		A ac = new C();
+		A ad = new D();
+
+		B bc = new C();
+		B bd = new D();
+		
+		//올바르지 않은 표현
+		//자식 참조변수 = new 부모();
+		
+		/*
+		 * B ba = new A(); // A가 부모라 자식이 부모를 포함못함 
+		 * C ca - new A(); 
+		 * D da = new A();
+		 */
+	}
+
+}

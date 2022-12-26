@@ -1,0 +1,31 @@
+package traning;
+
+class Apple {
+}
+
+class Pencil {
+}
+
+class Goods {
+	}
+	private Object goods = new Object();
+
+public Object getGoosd() {
+		return goods;
+	}
+
+	public void setGoosd(Object goods) {
+		this.goods = goods;
+	}
+
+public class Test {
+	public static void main(String[] args) {
+		Goods goods = new Goods();
+		goods.setGoosd(new Apple());
+		
+		Apple apple = (Apple) goods.getGoods();
+		
+		Pencil pencil = (Pencil) goods.getGoods();
+	}
+
+}

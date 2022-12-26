@@ -1,0 +1,50 @@
+package test.system;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ListSample {
+
+	public static void main(String[] args) {
+		String[] array = new String[] {"가", "나", "다", "라" };
+		System.out.println(array.length);
+		System.out.println(Arrays.toString(array));
+		array[1] = null;
+		array[2] = null;
+		array[3] = null;
+		System.out.println(array.length);
+		System.out.println(array[0]);
+		
+		java.util.List<String> List = new ArrayList<>();
+		List.add("다");//0
+		List.add("나");//1
+		List.add("가");//2
+		List.add("라");//3
+		System.out.println(List.size());
+		System.out.println(List.toString());
+		System.out.println(List.get(0));
+		List.remove(0);
+		List.remove("라");
+		System.out.println(List.size());
+		System.out.println(List.toString());
+		System.out.println(List.get(0));
+		
+		List.add(2, "다");
+		System.out.println(List.size());
+		System.out.println(List.toString());
+		
+		List.add(2, "X");
+		System.out.println(List.size());
+		System.out.println(List.toString());
+		
+		List.removeAll(List);
+		System.out.println(List.size());
+		System.out.println(List.toString());
+		System.out.println(List.isEmpty());
+		
+		List.add(2,"Y");
+		
+
+	}
+
+}

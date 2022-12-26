@@ -1,0 +1,21 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class qoduf {
+
+	public static void main(String[] args) {
+        
+		final int STUDENT = 5;
+		Scanner scan = new Scanner(System.in);
+		
+		int[] scores = new int[STUDENT];
+		
+		for (int i = 0; i < STUDENT; i ++) {
+			System.out.printf("%i 학생의 점수를 입력하세요.", i + 1 );
+		}
+		
+		
+
+	}
+}

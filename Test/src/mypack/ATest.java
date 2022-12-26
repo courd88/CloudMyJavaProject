@@ -1,0 +1,17 @@
+package mypack;
+
+public class ATest {
+	public static void main(String[] args) {
+		//A 클래스의 인스턴스 생성
+		A a = new A();
+		
+		// 필드값 출력
+		System.out.println(a.m);
+		System.out.println(a.n);
+		
+		// 매소드 호출
+		a.work1();
+		a.work2(10);
+	}
+
+}

@@ -1,0 +1,28 @@
+package test.system;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class LocalDateTimeExaple {
+
+	public static void main(String[] args) {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+		System.out.println("현재시간 : " + now.format(dtf));
+
+		LocalDateTime nowPlusOneYear = now.plusYears(1);
+		System.out.println("1년 후 : " + nowPlusOneYear.format(dtf));
+		
+		LocalDateTime nowMinusTwoMonth = now.minusMonths(2);
+		System.out.println("두달 전 : " + nowMinusTwoMonth.format(dtf));
+		
+		LocalDateTime nowPlusSevenDays = now.plusDays(7);
+		System.out.println("7일후 : " + nowPlusSevenDays.format(dtf));
+		
+		
+		////////////////////////////////////////////////////////////////
+		
+		LocalDateTime startdateTime = LocalDateTime.of(2022, 12, 7, 9, 30, 0);
+	}
+
+}

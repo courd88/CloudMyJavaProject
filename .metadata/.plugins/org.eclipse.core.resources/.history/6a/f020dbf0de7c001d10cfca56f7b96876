@@ -1,0 +1,26 @@
+package mypack;
+
+public class Car {
+	// 필드
+			String model;
+			boolean start;
+			int speed;
+			
+			//매소드
+			void speedUp() {
+				speed ++;
+				
+				if (speed > 0) {
+					start = true;
+				}
+			}
+			void speedDown() {
+				speed --;
+				if (speed <=0 ) {
+					start = false;
+				}
+			}
+			
+			}
+
+

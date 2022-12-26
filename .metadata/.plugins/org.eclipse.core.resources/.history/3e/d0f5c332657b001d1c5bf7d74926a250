@@ -1,0 +1,17 @@
+package mypack;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class qodufdustmq {
+	public static void main(String[] args) {
+
+		final int STUDENT = 3; CLASS = 3;
+		Scanner scan = new Scanner(System.in);
+
+		int[] scores = new int[STUDENT];
+				new int[CLASS];
+
+		int totalScore = 0;
+
+}

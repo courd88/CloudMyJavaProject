@@ -1,0 +1,19 @@
+package mypack;
+
+import java.util.Arrays;
+
+public class Traning {
+
+	public static void main(String[] args) {
+
+		int[][] a1 = new int[2][3];
+		a1[0][0] = 1;
+		a1[0][1] = 2;
+		a1[0][2] = 3;
+		a1[1][0] = 4;
+		a1[1][1] = 5;
+		a1[1][2] = 6;
+
+	}
+
+}
